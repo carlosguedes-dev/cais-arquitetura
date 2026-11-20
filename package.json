@@ -1,0 +1,37 @@
+{
+  "name": "cais-arquitetura",
+  "private": true,
+  "version": "1.0.0",
+  "description": "CAIS — Arquitetura, Luz & Concreto. Experiência editorial interativa com profundidade espacial, galeria horizontal e API Node.js.",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k -n WEB,API -c cyan,yellow \"vite\" \"tsx watch server/index.ts\"",
+    "dev:web": "vite",
+    "dev:api": "tsx watch server/index.ts",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc --noEmit && vite build",
+    "start": "tsx server/index.ts",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "gsap": "^3.12.7",
+    "lenis": "^1.2.3",
+    "lucide-react": "^0.487.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.14.0",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "@vitejs/plugin-react": "^4.4.1",
+    "concurrently": "^9.1.2",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.1"
+  }
+}
