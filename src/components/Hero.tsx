@@ -79,7 +79,7 @@ export function Hero({ onNavigate }: HeroProps) {
     >
       <div className="hero-media-layer" ref={mediaRef} aria-hidden="true">
         <img
-          src="/images/hero-pavilion.jpg"
+          src="./images/hero-pavilion.jpg"
           alt=""
           className="hero-photo"
           fetchPriority="high"

@@ -48,7 +48,7 @@ export const PROJECTS: ArchitecturalProject[] = [
     status: 'Concluída',
     featured: true,
     aspect: 'wide',
-    image: '/images/work-pedra-branca.jpg',
+    image: './images/work-pedra-branca.jpg',
     imageAlt: 'Casa Pedra Branca — residência em travertino bruto e concreto aparente sobre rochas costeiras em Paraty',
     summary:
       'Implantada entre matacões de granito originais sem escavação agressiva, a laje protendida de 14 metros filtra o sol atlântico e enquadra a linha de neblina do mar.',
@@ -91,7 +91,7 @@ export const PROJECTS: ArchitecturalProject[] = [
     status: 'Concluída',
     featured: true,
     aspect: 'editorial',
-    image: '/images/work-pavilhao-neblina.jpg',
+    image: './images/work-pavilhao-neblina.jpg',
     imageAlt: 'Pavilhão da Neblina — estrutura horizontal em aço escovado escuro e vidro suspensa sobre vale enevoado',
     summary:
       'Um espaço de escuta e exposições temporárias desenhado para quase desaparecer quando a cerração da Mantiqueira sobe pelo vale.',
@@ -133,7 +133,7 @@ export const PROJECTS: ArchitecturalProject[] = [
     status: 'Concluída',
     featured: true,
     aspect: 'tall',
-    image: '/images/work-galeria-cais.jpg',
+    image: './images/work-galeria-cais.jpg',
     imageAlt: 'Galeria Cais Sul — átrio monumental em concreto aparente com rasgos zenitais cortando feixes de luz natural',
     summary:
       'Antigo armazém portuário reconfigurado como museu de escultura contemporânea, onde a luz natural é tratada como matéria estrutural.',
@@ -176,7 +176,7 @@ export const PROJECTS: ArchitecturalProject[] = [
     status: 'Concluída',
     featured: true,
     aspect: 'wide',
-    image: '/images/work-refugio-araucaria.jpg',
+    image: './images/work-refugio-araucaria.jpg',
     imageAlt: 'Refúgio Araucária — casa de serra em aço Corten oxidado e concreto bruto emoldurada por araucárias',
     summary:
       'Pensada para envelhecer com o clima úmido e frio do planalto gaúcho, a envoltória de aço Corten cria uma pátina mineral que se funde à casca das araucárias.',
@@ -218,7 +218,7 @@ export const PROJECTS: ArchitecturalProject[] = [
     status: 'Em Obra',
     featured: true,
     aspect: 'tall',
-    image: '/images/work-torre-mirante.jpg',
+    image: './images/work-torre-mirante.jpg',
     imageAlt: 'Residência Mirante Jardim — fachada vertical em brises de concreto e madeira filtrando luz sobre jardim interno',
     summary:
       'Um oásis urbano de silêncio no Jardim Europa: fachadas de brises móveis protegem a privacidade enquanto trazem luz filtrada e vegetação tropical para o centro da casa.',
@@ -260,7 +260,7 @@ export const PROJECTS: ArchitecturalProject[] = [
     status: 'Concluída',
     featured: false,
     aspect: 'wide',
-    image: '/images/depth-courtyard.jpg',
+    image: './images/depth-courtyard.jpg',
     imageAlt: 'Casa Claro-Escuro — galeria em concreto aparente abrindo para claustro ensolarado e espelho d água',
     summary:
       'Primeiro projeto do escritório na costa alentejana: um percurso de compressão e abertura que conduz do silêncio sombreado à luz seca das dunas.',
@@ -302,7 +302,7 @@ export const PROJECTS: ArchitecturalProject[] = [
     status: 'Concluída',
     featured: false,
     aspect: 'wide',
-    image: '/images/studio-atelier.jpg',
+    image: './images/studio-atelier.jpg',
     imageAlt: 'Ateliê Botânico Príncipe Real — interior sereno com mesa monolítica em travertino, maquetes e cortinas de linho',
     summary:
       'Intervenção reversível que dialoga com cantarias do século XIX através de planos soltos de travertino, linho cru e marcenaria de precisão.',
@@ -344,7 +344,7 @@ export const PROJECTS: ArchitecturalProject[] = [
     status: 'Concluída',
     featured: false,
     aspect: 'wide',
-    image: '/images/hero-pavilion.jpg',
+    image: './images/hero-pavilion.jpg',
     imageAlt: 'Casa Espelho Atlântica — pavilhão em concreto e madeira refletido em espelho d água escuro ao entardecer',
     summary:
       'Um pavilhão de concreto aparente que flutua 35 centímetros acima de um espelho d’água em basalto, duplicando a copa da Mata Atlântica.',

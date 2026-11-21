@@ -205,7 +205,7 @@ export function DepthChamber({ scrollToPosition }: DepthChamberProps) {
         <div className="depth-3d-viewport">
           <div className="depth-plane depth-plane-back" ref={backPlaneRef}>
             <img
-              src="/images/depth-courtyard.jpg"
+              src="./images/depth-courtyard.jpg"
               alt="Perspectiva arquitetônica em concreto aparente com brises de madeira e espelho d'água ao fundo"
               className="depth-cloister-img"
               style={{
@@ -285,7 +285,7 @@ export function DepthChamber({ scrollToPosition }: DepthChamberProps) {
           {/* Dedicated clean viewport preview window on mobile so sunlight changes are always visible */}
           <div className="depth-mobile-window" aria-hidden="true">
             <img
-              src="/images/depth-courtyard.jpg"
+              src="./images/depth-courtyard.jpg"
               alt=""
               className="depth-cloister-img"
               style={{

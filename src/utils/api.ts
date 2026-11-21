@@ -32,7 +32,9 @@ export async function submitStudioInquiry(
       body: JSON.stringify(payload),
     });
 
-    if (response.ok) {
+    const contentType = response.headers.get('content-type') || '';
+
+    if (response.ok && contentType.includes('application/json')) {
       const data = (await response.json()) as Omit<InquiryResponse, 'persistedMode'>;
       return {
         ...data,
@@ -40,7 +42,11 @@ export async function submitStudioInquiry(
       };
     }
 
-    if (response.status >= 400 && response.status < 500) {
+    // Only surface validation errors returned by our real JSON Express API (400/422)
+    if (
+      (response.status === 400 || response.status === 422) &&
+      contentType.includes('application/json')
+    ) {
       const errBody = (await response.json().catch(() => ({}))) as { error?: string };
       throw new Error(errBody.error || 'Revise os campos informados.');
     }

@@ -57,7 +57,7 @@ export function ProcessDepth() {
 
             <div className="process-studio-figure">
               <img
-                src="/images/studio-atelier.jpg"
+                src="./images/studio-atelier.jpg"
                 alt="Mesa monolítica em travertino do ateliê CAIS com maquete em madeira e amostras de pedra e concreto"
                 decoding="async"
               />

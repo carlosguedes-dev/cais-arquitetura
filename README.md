@@ -4,6 +4,9 @@
 
 **Experiência digital editorial e monografia interativa para um escritório autoral de arquitetura contemporânea (São Paulo & Lisboa).**
 
+### [Acesse o Site Online (Live Preview)](https://carlosguedes-dev.github.io/cais-arquitetura/)
+
+[![Site Online](https://img.shields.io/badge/Live_Preview-GitHub_Pages-A65336?style=for-the-badge&logo=githubpages&logoColor=F2EFE9)](https://carlosguedes-dev.github.io/cais-arquitetura/)
 [![React](https://img.shields.io/badge/React-19-141412?style=for-the-badge&logo=react&logoColor=F2EFE9)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.8-141412?style=for-the-badge&logo=typescript&logoColor=F2EFE9)](https://www.typescriptlang.org/)
 [![Vite](https://img.shields.io/badge/Vite-6-141412?style=for-the-badge&logo=vite&logoColor=F2EFE9)](https://vite.dev/)
