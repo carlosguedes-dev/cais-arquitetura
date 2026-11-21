@@ -25,34 +25,40 @@ const LOCAL_STORAGE_KEY = 'cais_arquitetura_inquiries_v1';
 export async function submitStudioInquiry(
   payload: InquirySubmission
 ): Promise<InquiryResponse> {
-  try {
-    const response = await fetch('/api/inquiries', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(payload),
-    });
+  const isStaticPagesHost =
+    typeof window !== 'undefined' &&
+    window.location.hostname.endsWith('.github.io');
 
-    const contentType = response.headers.get('content-type') || '';
+  if (!isStaticPagesHost) {
+    try {
+      const response = await fetch('/api/inquiries', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
 
-    if (response.ok && contentType.includes('application/json')) {
-      const data = (await response.json()) as Omit<InquiryResponse, 'persistedMode'>;
-      return {
-        ...data,
-        persistedMode: 'server',
-      };
-    }
+      const contentType = response.headers.get('content-type') || '';
 
-    // Only surface validation errors returned by our real JSON Express API (400/422)
-    if (
-      (response.status === 400 || response.status === 422) &&
-      contentType.includes('application/json')
-    ) {
-      const errBody = (await response.json().catch(() => ({}))) as { error?: string };
-      throw new Error(errBody.error || 'Revise os campos informados.');
-    }
-  } catch (err) {
-    if (err instanceof Error && !err.message.toLowerCase().includes('fetch')) {
-      throw err;
+      if (response.ok && contentType.includes('application/json')) {
+        const data = (await response.json()) as Omit<InquiryResponse, 'persistedMode'>;
+        return {
+          ...data,
+          persistedMode: 'server',
+        };
+      }
+
+      // Only surface validation errors returned by our real JSON Express API (400/422)
+      if (
+        (response.status === 400 || response.status === 422) &&
+        contentType.includes('application/json')
+      ) {
+        const errBody = (await response.json().catch(() => ({}))) as { error?: string };
+        throw new Error(errBody.error || 'Revise os campos informados.');
+      }
+    } catch (err) {
+      if (err instanceof Error && !err.message.toLowerCase().includes('fetch')) {
+        throw err;
+      }
     }
   }
 
